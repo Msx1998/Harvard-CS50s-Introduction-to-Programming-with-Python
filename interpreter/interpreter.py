@@ -10,14 +10,11 @@ For instance, if the user inputs 1 + 1, your program should output 2.0. Assume t
 
 Note that, just as python itself is an interpreter for Python, so will your interpreter.py be an interpreter for math!
 """
-
-
 def main():
     print(calculate(input("Enter your expression: ")))
 
-
 def calculate(n):
-    x, y, z = n.split()
+    x,y,z = n.split()
     x = int(x)
     z = int(z)
     if y == "+":
@@ -30,6 +27,5 @@ def calculate(n):
         return float(x * z)
     else:
         return "Invalid"
-
 
 main()
